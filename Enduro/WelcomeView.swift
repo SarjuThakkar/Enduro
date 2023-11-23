@@ -55,7 +55,6 @@ struct GoalOptionButton: View {
     var body: some View {
         Button(action: {
             UserDefaults.standard.userPreferences = UserPreferences(goalType: goalType)
-            print("Goal set to: \(goalType.rawValue)")
             // Here you might want to navigate to the main view of your app or perform other actions after saving the preference
         }) {
             VStack {

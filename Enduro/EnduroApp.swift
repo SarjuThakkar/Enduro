@@ -20,10 +20,6 @@ struct EnduroApp: App {
                    WelcomeView()
                }
            }
-           .onAppear {
-               let preferences = UserDefaults.standard.userPreferences
-               print("Retrieved preferences: \(String(describing: preferences))")
-           }
        }
     }
 }
