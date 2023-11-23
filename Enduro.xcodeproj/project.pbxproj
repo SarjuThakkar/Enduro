@@ -8,21 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		B700DC022B0D67F80094DDF3 /* EnduroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC012B0D67F80094DDF3 /* EnduroApp.swift */; };
-		B700DC042B0D67F80094DDF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC032B0D67F80094DDF3 /* ContentView.swift */; };
+		B700DC042B0D67F80094DDF3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC032B0D67F80094DDF3 /* WelcomeView.swift */; };
 		B700DC062B0D67F90094DDF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B700DC052B0D67F90094DDF3 /* Assets.xcassets */; };
 		B700DC092B0D67F90094DDF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B700DC082B0D67F90094DDF3 /* Preview Assets.xcassets */; };
 		B700DC0B2B0D67F90094DDF3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC0A2B0D67F90094DDF3 /* Persistence.swift */; };
 		B700DC0E2B0D67F90094DDF3 /* Enduro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B700DC0C2B0D67F90094DDF3 /* Enduro.xcdatamodeld */; };
+		B700DC152B0EFBD50094DDF3 /* UserPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC142B0EFBD50094DDF3 /* UserPreference.swift */; };
+		B700DC172B0EFC0F0094DDF3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC162B0EFC0F0094DDF3 /* UserDefaults.swift */; };
+		B700DC192B0EFCA70094DDF3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC182B0EFCA70094DDF3 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B700DBFE2B0D67F80094DDF3 /* Enduro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enduro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B700DC012B0D67F80094DDF3 /* EnduroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduroApp.swift; sourceTree = "<group>"; };
-		B700DC032B0D67F80094DDF3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B700DC032B0D67F80094DDF3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B700DC052B0D67F90094DDF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B700DC082B0D67F90094DDF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B700DC0A2B0D67F90094DDF3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B700DC0D2B0D67F90094DDF3 /* Enduro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Enduro.xcdatamodel; sourceTree = "<group>"; };
+		B700DC142B0EFBD50094DDF3 /* UserPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreference.swift; sourceTree = "<group>"; };
+		B700DC162B0EFC0F0094DDF3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		B700DC182B0EFCA70094DDF3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,10 @@
 			isa = PBXGroup;
 			children = (
 				B700DC012B0D67F80094DDF3 /* EnduroApp.swift */,
-				B700DC032B0D67F80094DDF3 /* ContentView.swift */,
+				B700DC032B0D67F80094DDF3 /* WelcomeView.swift */,
+				B700DC182B0EFCA70094DDF3 /* MainView.swift */,
+				B700DC142B0EFBD50094DDF3 /* UserPreference.swift */,
+				B700DC162B0EFC0F0094DDF3 /* UserDefaults.swift */,
 				B700DC052B0D67F90094DDF3 /* Assets.xcassets */,
 				B700DC0A2B0D67F90094DDF3 /* Persistence.swift */,
 				B700DC0C2B0D67F90094DDF3 /* Enduro.xcdatamodeld */,
@@ -144,8 +153,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B700DC0E2B0D67F90094DDF3 /* Enduro.xcdatamodeld in Sources */,
+				B700DC192B0EFCA70094DDF3 /* MainView.swift in Sources */,
 				B700DC0B2B0D67F90094DDF3 /* Persistence.swift in Sources */,
-				B700DC042B0D67F80094DDF3 /* ContentView.swift in Sources */,
+				B700DC172B0EFC0F0094DDF3 /* UserDefaults.swift in Sources */,
+				B700DC042B0D67F80094DDF3 /* WelcomeView.swift in Sources */,
+				B700DC152B0EFBD50094DDF3 /* UserPreference.swift in Sources */,
 				B700DC022B0D67F80094DDF3 /* EnduroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

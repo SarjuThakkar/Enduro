@@ -9,12 +9,21 @@ import SwiftUI
 
 @main
 struct EnduroApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-        }
+           Group {
+               if UserDefaults.standard.userPreferences != nil {
+                   // Your main view if preferences are set
+                   MainView()
+               } else {
+                   // Show the welcome view if no preferences are set
+                   WelcomeView()
+               }
+           }
+           .onAppear {
+               let preferences = UserDefaults.standard.userPreferences
+               print("Retrieved preferences: \(String(describing: preferences))")
+           }
+       }
     }
 }
