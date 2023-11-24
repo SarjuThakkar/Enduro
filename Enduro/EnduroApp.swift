@@ -7,19 +7,22 @@
 
 import SwiftUI
 
+class AppState: ObservableObject {
+    @Published var hasCompletedWelcomeFlow: Bool = false
+}
+
 @main
 struct EnduroApp: App {
+    @StateObject var appState = AppState()
+    
     var body: some Scene {
         WindowGroup {
-           Group {
-               if UserDefaults.standard.userPreferences != nil {
-                   // Your main view if preferences are set
-                   MainView()
-               } else {
-                   // Show the welcome view if no preferences are set
-                   WelcomeView()
-               }
-           }
-       }
+            if appState.hasCompletedWelcomeFlow || UserDefaults.standard.userPreferences != nil {
+                MainView()
+            } else {
+                WelcomeView(appState: appState)
+            }
+        }
     }
 }
+

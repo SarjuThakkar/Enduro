@@ -7,11 +7,14 @@
 
 import Foundation
 
-enum GoalType: String, Codable {
+enum GoalType: String, Codable, Hashable {
     case time = "Time"
     case distance = "Distance"
 }
 
 struct UserPreferences: Codable {
     var goalType: GoalType
+    var goalDistance: Double?
+    var goalDuration: TimeInterval? // Duration in seconds
 }
+
