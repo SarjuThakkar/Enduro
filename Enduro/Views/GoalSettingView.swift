@@ -51,7 +51,7 @@ struct GoalSettingView: View {
         } else if goalType == .distance {
             preferences.goalDistance = selectedDistance
         }
-        // UserDefaults.standard.userPreferences = preferences
+        UserDefaults.standard.userPreferences = preferences
         onGoalSet()
     }
 }

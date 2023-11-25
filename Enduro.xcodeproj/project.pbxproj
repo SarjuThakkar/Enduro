@@ -20,6 +20,9 @@
 		B700DC212B0F1ED20094DDF3 /* GoalSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC202B0F1ED20094DDF3 /* GoalSettingView.swift */; };
 		B700DC232B10F4A90094DDF3 /* DurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC222B10F4A90094DDF3 /* DurationPicker.swift */; };
 		B700DC252B10F5690094DDF3 /* DistanceSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC242B10F5690094DDF3 /* DistanceSlider.swift */; };
+		B700DC272B11BE750094DDF3 /* TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC262B11BE750094DDF3 /* TrendsView.swift */; };
+		B700DC292B11BE850094DDF3 /* RunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC282B11BE850094DDF3 /* RunView.swift */; };
+		B700DC2B2B11BE990094DDF3 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC2A2B11BE990094DDF3 /* LogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		B700DC202B0F1ED20094DDF3 /* GoalSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalSettingView.swift; sourceTree = "<group>"; };
 		B700DC222B10F4A90094DDF3 /* DurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPicker.swift; sourceTree = "<group>"; };
 		B700DC242B10F5690094DDF3 /* DistanceSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceSlider.swift; sourceTree = "<group>"; };
+		B700DC262B11BE750094DDF3 /* TrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsView.swift; sourceTree = "<group>"; };
+		B700DC282B11BE850094DDF3 /* RunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunView.swift; sourceTree = "<group>"; };
+		B700DC2A2B11BE990094DDF3 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				B700DC202B0F1ED20094DDF3 /* GoalSettingView.swift */,
 				B700DC222B10F4A90094DDF3 /* DurationPicker.swift */,
 				B700DC242B10F5690094DDF3 /* DistanceSlider.swift */,
+				B700DC262B11BE750094DDF3 /* TrendsView.swift */,
+				B700DC282B11BE850094DDF3 /* RunView.swift */,
+				B700DC2A2B11BE990094DDF3 /* LogView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -183,14 +192,17 @@
 				B700DC0E2B0D67F90094DDF3 /* Enduro.xcdatamodeld in Sources */,
 				B700DC212B0F1ED20094DDF3 /* GoalSettingView.swift in Sources */,
 				B700DC1F2B0F1DED0094DDF3 /* GoalOptionButton.swift in Sources */,
+				B700DC292B11BE850094DDF3 /* RunView.swift in Sources */,
 				B700DC192B0EFCA70094DDF3 /* HomeView.swift in Sources */,
 				B700DC0B2B0D67F90094DDF3 /* Persistence.swift in Sources */,
 				B700DC172B0EFC0F0094DDF3 /* UserDefaults.swift in Sources */,
 				B700DC042B0D67F80094DDF3 /* WelcomeView.swift in Sources */,
 				B700DC232B10F4A90094DDF3 /* DurationPicker.swift in Sources */,
+				B700DC272B11BE750094DDF3 /* TrendsView.swift in Sources */,
 				B700DC252B10F5690094DDF3 /* DistanceSlider.swift in Sources */,
 				B700DC152B0EFBD50094DDF3 /* UserPreference.swift in Sources */,
 				B700DC022B0D67F80094DDF3 /* EnduroApp.swift in Sources */,
+				B700DC2B2B11BE990094DDF3 /* LogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

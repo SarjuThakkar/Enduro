@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var selectedTab: Tabs = .run // Default to the "Run" tab
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView(selection: $selectedTab) {
+            TrendsView()
+                .tabItem {
+                    Label("Trends", systemImage: "chart.xyaxis.line")
+                }
+                .tag(Tabs.trends) // Tag for identifying the tab
+
+            RunView()
+                .tabItem {
+                    Label("Run", systemImage: "figure.run")
+                }
+                .tag(Tabs.run) // Tag for identifying the tab
+
+            LogView()
+                .tabItem {
+                    Label("Log", systemImage: "square.and.pencil")
+                }
+                .tag(Tabs.log) // Tag for identifying the tab
+        }
+    }
+
+    enum Tabs {
+        case trends, run, log
     }
 }
 
