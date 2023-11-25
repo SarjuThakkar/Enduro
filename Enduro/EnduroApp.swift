@@ -18,7 +18,7 @@ struct EnduroApp: App {
     var body: some Scene {
         WindowGroup {
             if appState.hasCompletedWelcomeFlow || UserDefaults.standard.userPreferences != nil {
-                MainView()
+                HomeView()
             } else {
                 WelcomeView(appState: appState)
             }
