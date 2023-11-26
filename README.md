@@ -1,6 +1,6 @@
 # Enduro
 
-A running app built for iOS with Swift + SwiftUI Basd on progressive overload methodology Each day you will be challenged to beat your previous longest run
+A running app built for iOS with Swift + SwiftUI Basd on progressive overload methodology. Each day you will be challenged to beat your previous longest run
 
 Features
 --------
