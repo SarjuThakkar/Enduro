@@ -11,7 +11,6 @@ struct LogView: View {
     @Environment(\.managedObjectContext) private var context
     @State private var showingAddRunLog = false
     @State private var selectedRunLog: RunLog?
-    @State private var showingEditLogView = false
 
     private var viewModel: RunLogViewModel {
         RunLogViewModel(context: context)
@@ -28,7 +27,6 @@ struct LogView: View {
                 ForEach(runLogs, id: \.self) { log in
                     Button(action: {
                         selectedRunLog = log
-                        showingEditLogView = true
                     }) {
                         Text("Run on \(log.timestamp ?? Date(), formatter: dateFormatter)")
                     }
@@ -44,13 +42,12 @@ struct LogView: View {
             .sheet(isPresented: $showingAddRunLog) {
                 AddRunLogView(viewModel: viewModel)
             }
-            .sheet(isPresented: $showingEditLogView) {
-                if let runLog = selectedRunLog {
-                    EditLogView(viewModel: viewModel, runLog: runLog)
-                }
+            .sheet(item: $selectedRunLog) { runLog in
+                EditLogView(viewModel: viewModel, runLog: runLog)
             }
         }
     }
+    
 
     private func deleteRunLog(at offsets: IndexSet) {
         offsets.forEach { index in
