@@ -23,7 +23,6 @@ class RunLogViewModel: ObservableObject {
         newLog.distance = distance
         newLog.duration = duration
         saveContext()
-
     }
     
     func updateRunLog(_ updatedLog: RunLog) {

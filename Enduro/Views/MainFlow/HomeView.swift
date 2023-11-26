@@ -26,7 +26,7 @@ struct HomeView: View {
 
             LogView()
                 .tabItem {
-                    Label("Logs", systemImage: "square.and.pencil")
+                    Label("Log", systemImage: "square.and.pencil")
                 }
                 .tag(Tabs.log) // Tag for identifying the tab
         }

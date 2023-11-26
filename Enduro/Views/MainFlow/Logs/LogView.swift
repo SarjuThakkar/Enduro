@@ -35,21 +35,18 @@ struct LogView: View {
                 }
                 .onDelete(perform: deleteRunLog)
             }
-            .navigationTitle("Run Logs")
+            .navigationTitle("Completed Runs")
             .navigationBarItems(trailing: Button(action: {
                 showingAddRunLog = true
             }) {
                 Image(systemName: "plus")
             })
             .sheet(isPresented: $showingAddRunLog) {
-                AddRunLogView()
+                AddRunLogView(viewModel: viewModel)
             }
             .sheet(isPresented: $showingEditLogView) {
                 if let runLog = selectedRunLog {
-                    EditLogView(runLog: runLog) { updatedLog in
-                        viewModel.updateRunLog(updatedLog)
-                        showingEditLogView = false
-                    }
+                    EditLogView(viewModel: viewModel, runLog: runLog)
                 }
             }
         }
@@ -70,3 +67,10 @@ struct LogView: View {
     }
 }
 
+struct LogView_Previews: PreviewProvider {
+    static var previews: some View {
+        // Replace with your method of obtaining a preview context
+        let context = PersistenceController.preview.container.viewContext
+        LogView().environment(\.managedObjectContext, context)
+    }
+}

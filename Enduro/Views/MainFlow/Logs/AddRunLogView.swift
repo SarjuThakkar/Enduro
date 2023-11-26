@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddRunLogView: View {
     @Environment(\.presentationMode) var presentationMode
-    @Environment(\.managedObjectContext) private var context
+    @ObservedObject var viewModel: RunLogViewModel
 
     @State private var timestamp = Date()
     @State private var distance: Double = 0
@@ -25,21 +25,18 @@ struct AddRunLogView: View {
                     .keyboardType(.decimalPad)
                 
                 Button("Save") {
-                    let newLog = RunLog(context: context)
-                    newLog.timestamp = timestamp
-                    newLog.distance = distance
-                    newLog.duration = duration
-
-                    do {
-                        try context.save()
-                        presentationMode.wrappedValue.dismiss()
-                    } catch {
-                        print("Error saving context: \(error)")
-                    }
+                    viewModel.addRunLog(timestamp: timestamp, distance: distance, duration: duration)
+                    presentationMode.wrappedValue.dismiss()
                 }
             }
-            .navigationTitle("Add Run Log")
+            .navigationTitle("Record Run")
         }
+    }
+}
+
+struct AddRunLogView_Previews: PreviewProvider {
+    static var previews: some View {
+        AddRunLogView(viewModel: MockRunLogViewModel())
     }
 }
 

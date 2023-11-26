@@ -26,6 +26,7 @@
 		B700DC312B122B610094DDF3 /* RunLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC302B122B610094DDF3 /* RunLogViewModel.swift */; };
 		B700DC332B1236210094DDF3 /* AddRunLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC322B1236210094DDF3 /* AddRunLogView.swift */; };
 		B700DC352B1236340094DDF3 /* EditLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC342B1236340094DDF3 /* EditLogView.swift */; };
+		B78347FF2B127F81006ACFE5 /* MockRunLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		B700DC302B122B610094DDF3 /* RunLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogViewModel.swift; sourceTree = "<group>"; };
 		B700DC322B1236210094DDF3 /* AddRunLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRunLogView.swift; sourceTree = "<group>"; };
 		B700DC342B1236340094DDF3 /* EditLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLogView.swift; sourceTree = "<group>"; };
+		B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRunLogViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				B700DC1E2B0F1DED0094DDF3 /* GoalOptionButton.swift */,
 				B700DC222B10F4A90094DDF3 /* DurationPicker.swift */,
 				B700DC242B10F5690094DDF3 /* DistanceSlider.swift */,
+				B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */,
 			);
 			path = SharedComponents;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				B700DC152B0EFBD50094DDF3 /* UserPreference.swift in Sources */,
 				B700DC022B0D67F80094DDF3 /* EnduroApp.swift in Sources */,
 				B700DC2B2B11BE990094DDF3 /* LogView.swift in Sources */,
+				B78347FF2B127F81006ACFE5 /* MockRunLogViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
