@@ -18,7 +18,7 @@ struct AddRunLogView: View {
     var body: some View {
         NavigationView {
             Form {
-                DatePicker("Timestamp", selection: $timestamp)
+                DatePicker("Date", selection: $timestamp)
                 TextField("Distance (miles)", value: $distance, format: .number)
                     .keyboardType(.decimalPad)
                 TextField("Duration (minutes)", value: $duration, format: .number)

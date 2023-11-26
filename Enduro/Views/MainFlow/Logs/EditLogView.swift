@@ -29,9 +29,11 @@ struct EditLogView: View {
     var body: some View {
         NavigationView {
             Form {
-                DatePicker("Timestamp", selection: $timestamp, displayedComponents: .date)
+                DatePicker("Date", selection: $timestamp)
                 TextField("Distance", value: $distance, format: .number)
+                    .keyboardType(.decimalPad)
                 TextField("Duration", value: $duration, format: .number)
+                    .keyboardType(.decimalPad)
                 
                 Button("Save") {
                     runLog.timestamp = timestamp
