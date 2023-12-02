@@ -40,10 +40,10 @@ struct LogView: View {
                 Image(systemName: "plus")
             })
             .sheet(isPresented: $showingAddRunLog) {
-                AddRunLogView(viewModel: viewModel)
+                AddEditRunLogView(viewModel: viewModel)
             }
             .sheet(item: $selectedRunLog) { runLog in
-                EditLogView(viewModel: viewModel, runLog: runLog)
+                AddEditRunLogView(viewModel: viewModel, runLogToEdit: runLog)
             }
         }
     }

@@ -28,17 +28,6 @@ struct DurationPicker: View {
     }
 }
 
-struct PickerContent<Data>: View where Data: RandomAccessCollection, Data.Element: Hashable {
-    let pickerValues: Data
-    let labelBuilder: (Data.Element) -> String
-
-    var body: some View {
-        ForEach(pickerValues, id: \.self) { value in
-            Text(labelBuilder(value)).tag(value)
-        }
-    }
-}
-
 
 struct DurationPicker_Previews: PreviewProvider {
     @State static var previewSelectedHours: Int = 1 // Temporary state for preview

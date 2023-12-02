@@ -17,11 +17,12 @@ class RunLogViewModel: ObservableObject {
         self.context = context
     }
 
-    func addRunLog(timestamp: Date, distance: Double, duration: Double) {
+    func addRunLog(timestamp: Date, distance: Double, duration: Int32, pace: Double) {
         let newLog = RunLog(context: context)
         newLog.timestamp = timestamp
         newLog.distance = distance
         newLog.duration = duration
+        newLog.pace = pace
         saveContext()
     }
     

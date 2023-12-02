@@ -24,9 +24,9 @@
 		B700DC292B11BE850094DDF3 /* RunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC282B11BE850094DDF3 /* RunView.swift */; };
 		B700DC2B2B11BE990094DDF3 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC2A2B11BE990094DDF3 /* LogView.swift */; };
 		B700DC312B122B610094DDF3 /* RunLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC302B122B610094DDF3 /* RunLogViewModel.swift */; };
-		B700DC332B1236210094DDF3 /* AddRunLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC322B1236210094DDF3 /* AddRunLogView.swift */; };
-		B700DC352B1236340094DDF3 /* EditLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC342B1236340094DDF3 /* EditLogView.swift */; };
+		B700DC332B1236210094DDF3 /* AddEditRunLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */; };
 		B78347FF2B127F81006ACFE5 /* MockRunLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */; };
+		B788424B2B1B766A006895EA /* PickerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788424A2B1B766A006895EA /* PickerContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,9 +48,9 @@
 		B700DC282B11BE850094DDF3 /* RunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunView.swift; sourceTree = "<group>"; };
 		B700DC2A2B11BE990094DDF3 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		B700DC302B122B610094DDF3 /* RunLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogViewModel.swift; sourceTree = "<group>"; };
-		B700DC322B1236210094DDF3 /* AddRunLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRunLogView.swift; sourceTree = "<group>"; };
-		B700DC342B1236340094DDF3 /* EditLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLogView.swift; sourceTree = "<group>"; };
+		B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditRunLogView.swift; sourceTree = "<group>"; };
 		B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRunLogViewModel.swift; sourceTree = "<group>"; };
+		B788424A2B1B766A006895EA /* PickerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +149,7 @@
 				B700DC222B10F4A90094DDF3 /* DurationPicker.swift */,
 				B700DC242B10F5690094DDF3 /* DistanceSlider.swift */,
 				B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */,
+				B788424A2B1B766A006895EA /* PickerContent.swift */,
 			);
 			path = SharedComponents;
 			sourceTree = "<group>";
@@ -165,8 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				B700DC2A2B11BE990094DDF3 /* LogView.swift */,
-				B700DC322B1236210094DDF3 /* AddRunLogView.swift */,
-				B700DC342B1236340094DDF3 /* EditLogView.swift */,
+				B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */,
 			);
 			path = Logs;
 			sourceTree = "<group>";
@@ -243,6 +243,7 @@
 			files = (
 				B700DC0E2B0D67F90094DDF3 /* Enduro.xcdatamodeld in Sources */,
 				B700DC212B0F1ED20094DDF3 /* GoalSettingView.swift in Sources */,
+				B788424B2B1B766A006895EA /* PickerContent.swift in Sources */,
 				B700DC1F2B0F1DED0094DDF3 /* GoalOptionButton.swift in Sources */,
 				B700DC312B122B610094DDF3 /* RunLogViewModel.swift in Sources */,
 				B700DC292B11BE850094DDF3 /* RunView.swift in Sources */,
@@ -250,9 +251,8 @@
 				B700DC0B2B0D67F90094DDF3 /* Persistence.swift in Sources */,
 				B700DC172B0EFC0F0094DDF3 /* UserDefaults.swift in Sources */,
 				B700DC042B0D67F80094DDF3 /* WelcomeView.swift in Sources */,
-				B700DC332B1236210094DDF3 /* AddRunLogView.swift in Sources */,
+				B700DC332B1236210094DDF3 /* AddEditRunLogView.swift in Sources */,
 				B700DC232B10F4A90094DDF3 /* DurationPicker.swift in Sources */,
-				B700DC352B1236340094DDF3 /* EditLogView.swift in Sources */,
 				B700DC272B11BE750094DDF3 /* TrendsView.swift in Sources */,
 				B700DC252B10F5690094DDF3 /* DistanceSlider.swift in Sources */,
 				B700DC152B0EFBD50094DDF3 /* UserPreference.swift in Sources */,
