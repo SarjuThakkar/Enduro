@@ -27,6 +27,7 @@
 		B700DC332B1236210094DDF3 /* AddEditRunLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */; };
 		B78347FF2B127F81006ACFE5 /* MockRunLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */; };
 		B788424B2B1B766A006895EA /* PickerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788424A2B1B766A006895EA /* PickerContent.swift */; };
+		B788424D2B1D6CB0006895EA /* RunDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788424C2B1D6CB0006895EA /* RunDataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditRunLogView.swift; sourceTree = "<group>"; };
 		B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRunLogViewModel.swift; sourceTree = "<group>"; };
 		B788424A2B1B766A006895EA /* PickerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContent.swift; sourceTree = "<group>"; };
+		B788424C2B1D6CB0006895EA /* RunDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				B700DC302B122B610094DDF3 /* RunLogViewModel.swift */,
+				B788424C2B1D6CB0006895EA /* RunDataViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				B700DC212B0F1ED20094DDF3 /* GoalSettingView.swift in Sources */,
 				B788424B2B1B766A006895EA /* PickerContent.swift in Sources */,
 				B700DC1F2B0F1DED0094DDF3 /* GoalOptionButton.swift in Sources */,
+				B788424D2B1D6CB0006895EA /* RunDataViewModel.swift in Sources */,
 				B700DC312B122B610094DDF3 /* RunLogViewModel.swift in Sources */,
 				B700DC292B11BE850094DDF3 /* RunView.swift in Sources */,
 				B700DC192B0EFCA70094DDF3 /* HomeView.swift in Sources */,

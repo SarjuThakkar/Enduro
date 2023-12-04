@@ -9,7 +9,6 @@ import Foundation
 import CoreData
 
 class RunLogViewModel: ObservableObject {
-
     // Reference to the managed object context
     private var context: NSManagedObjectContext
 
