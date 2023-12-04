@@ -33,8 +33,6 @@ struct GoalOptionButton: View {
 }
 
 
-struct GoalOptionButton_Previews: PreviewProvider {
-    static var previews: some View {
-        GoalOptionButton(text: "I want to run longer", symbolName: "timer", goalType: .time)
-    }
+#Preview {
+    GoalOptionButton(text: "I want to run longer", symbolName: "timer", goalType: .time)
 }

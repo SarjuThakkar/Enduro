@@ -47,7 +47,7 @@ struct GoalSettingView: View {
     private func saveGoalAndContinue() {
         var preferences = UserPreferences(goalType: goalType ?? .distance)
         if goalType == .time {
-            preferences.goalDuration = Double(selectedHours * 3600 + selectedMinutes * 60)
+            preferences.goalDuration = Int32(selectedHours * 3600 + selectedMinutes * 60)
         } else if goalType == .distance {
             preferences.goalDistance = selectedDistance
         }
@@ -57,9 +57,7 @@ struct GoalSettingView: View {
 }
 
 
-struct GoalSettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        GoalSettingView(goalType: .time, onGoalSet: {})
-    }
+#Preview {
+        GoalSettingView(goalType: .distance, onGoalSet: {})
 }
 

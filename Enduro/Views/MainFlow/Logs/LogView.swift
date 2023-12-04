@@ -6,20 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct LogView: View {
-    @Environment(\.managedObjectContext) private var context
+    @Query(sort: \RunLog.timestamp, order: .reverse) private var runLogs: [RunLog]
     @State private var showingAddRunLog = false
     @State private var selectedRunLog: RunLog?
-
-    private var viewModel: RunLogViewModel {
-        RunLogViewModel(context: context)
-    }
-    
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \RunLog.timestamp, ascending: false)],
-        animation: .default)
-    private var runLogs: FetchedResults<RunLog>
+    @Environment(\.modelContext) private var modelContext
     
     var body: some View {
         NavigationView {
@@ -28,7 +21,7 @@ struct LogView: View {
                     Button(action: {
                         selectedRunLog = log
                     }) {
-                        Text("Run on \(log.timestamp ?? Date(), formatter: dateFormatter)")
+                        Text("Run on \(log.timestamp, formatter: dateFormatter)")
                     }
                 }
                 .onDelete(perform: deleteRunLog)
@@ -40,10 +33,10 @@ struct LogView: View {
                 Image(systemName: "plus")
             })
             .sheet(isPresented: $showingAddRunLog) {
-                AddEditRunLogView(viewModel: viewModel)
+                AddEditRunLogView()
             }
             .sheet(item: $selectedRunLog) { runLog in
-                AddEditRunLogView(viewModel: viewModel, runLogToEdit: runLog)
+                AddEditRunLogView(runLogToEdit: runLog)
             }
         }
     }
@@ -52,7 +45,7 @@ struct LogView: View {
     private func deleteRunLog(at offsets: IndexSet) {
         offsets.forEach { index in
             let runLog = runLogs[index]
-            viewModel.deleteRunLog(runLog)
+            modelContext.delete(runLog)
         }
     }
 
@@ -64,10 +57,6 @@ struct LogView: View {
     }
 }
 
-struct LogView_Previews: PreviewProvider {
-    static var previews: some View {
-        // Replace with your method of obtaining a preview context
-        let context = PersistenceController.preview.container.viewContext
-        LogView().environment(\.managedObjectContext, context)
-    }
+#Preview {
+    LogView()
 }

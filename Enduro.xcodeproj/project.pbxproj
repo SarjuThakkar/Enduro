@@ -11,8 +11,6 @@
 		B700DC042B0D67F80094DDF3 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC032B0D67F80094DDF3 /* WelcomeView.swift */; };
 		B700DC062B0D67F90094DDF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B700DC052B0D67F90094DDF3 /* Assets.xcassets */; };
 		B700DC092B0D67F90094DDF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B700DC082B0D67F90094DDF3 /* Preview Assets.xcassets */; };
-		B700DC0B2B0D67F90094DDF3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC0A2B0D67F90094DDF3 /* Persistence.swift */; };
-		B700DC0E2B0D67F90094DDF3 /* Enduro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B700DC0C2B0D67F90094DDF3 /* Enduro.xcdatamodeld */; };
 		B700DC152B0EFBD50094DDF3 /* UserPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC142B0EFBD50094DDF3 /* UserPreference.swift */; };
 		B700DC172B0EFC0F0094DDF3 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC162B0EFC0F0094DDF3 /* UserDefaults.swift */; };
 		B700DC192B0EFCA70094DDF3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC182B0EFCA70094DDF3 /* HomeView.swift */; };
@@ -23,11 +21,12 @@
 		B700DC272B11BE750094DDF3 /* TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC262B11BE750094DDF3 /* TrendsView.swift */; };
 		B700DC292B11BE850094DDF3 /* RunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC282B11BE850094DDF3 /* RunView.swift */; };
 		B700DC2B2B11BE990094DDF3 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC2A2B11BE990094DDF3 /* LogView.swift */; };
-		B700DC312B122B610094DDF3 /* RunLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC302B122B610094DDF3 /* RunLogViewModel.swift */; };
 		B700DC332B1236210094DDF3 /* AddEditRunLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */; };
-		B78347FF2B127F81006ACFE5 /* MockRunLogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */; };
 		B788424B2B1B766A006895EA /* PickerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788424A2B1B766A006895EA /* PickerContent.swift */; };
-		B788424D2B1D6CB0006895EA /* RunDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788424C2B1D6CB0006895EA /* RunDataViewModel.swift */; };
+		B7DFA8622B1E1BE0008D9150 /* RunLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8612B1E1BE0008D9150 /* RunLog.swift */; };
+		B7DFA8642B1E6877008D9150 /* AddDurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8632B1E6877008D9150 /* AddDurationPicker.swift */; };
+		B7DFA8662B1E6BEB008D9150 /* RunData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8652B1E6BEB008D9150 /* RunData.swift */; };
+		B7DFA86A2B1E6E1C008D9150 /* TimeRangeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8692B1E6E1C008D9150 /* TimeRangeSelectorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +35,6 @@
 		B700DC032B0D67F80094DDF3 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		B700DC052B0D67F90094DDF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B700DC082B0D67F90094DDF3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B700DC0A2B0D67F90094DDF3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		B700DC0D2B0D67F90094DDF3 /* Enduro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Enduro.xcdatamodel; sourceTree = "<group>"; };
 		B700DC142B0EFBD50094DDF3 /* UserPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreference.swift; sourceTree = "<group>"; };
 		B700DC162B0EFC0F0094DDF3 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		B700DC182B0EFCA70094DDF3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -48,11 +45,12 @@
 		B700DC262B11BE750094DDF3 /* TrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsView.swift; sourceTree = "<group>"; };
 		B700DC282B11BE850094DDF3 /* RunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunView.swift; sourceTree = "<group>"; };
 		B700DC2A2B11BE990094DDF3 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
-		B700DC302B122B610094DDF3 /* RunLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLogViewModel.swift; sourceTree = "<group>"; };
 		B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditRunLogView.swift; sourceTree = "<group>"; };
-		B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRunLogViewModel.swift; sourceTree = "<group>"; };
 		B788424A2B1B766A006895EA /* PickerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContent.swift; sourceTree = "<group>"; };
-		B788424C2B1D6CB0006895EA /* RunDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunDataViewModel.swift; sourceTree = "<group>"; };
+		B7DFA8612B1E1BE0008D9150 /* RunLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLog.swift; sourceTree = "<group>"; };
+		B7DFA8632B1E6877008D9150 /* AddDurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDurationPicker.swift; sourceTree = "<group>"; };
+		B7DFA8652B1E6BEB008D9150 /* RunData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunData.swift; sourceTree = "<group>"; };
+		B7DFA8692B1E6E1C008D9150 /* TimeRangeSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRangeSelectorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,13 +83,10 @@
 		B700DC002B0D67F80094DDF3 /* Enduro */ = {
 			isa = PBXGroup;
 			children = (
-				B700DC2F2B122AC10094DDF3 /* ViewModels */,
 				B700DC1D2B0F1DC70094DDF3 /* Views */,
 				B700DC1C2B0F1DAF0094DDF3 /* Models */,
 				B700DC012B0D67F80094DDF3 /* EnduroApp.swift */,
 				B700DC052B0D67F90094DDF3 /* Assets.xcassets */,
-				B700DC0A2B0D67F90094DDF3 /* Persistence.swift */,
-				B700DC0C2B0D67F90094DDF3 /* Enduro.xcdatamodeld */,
 				B700DC072B0D67F90094DDF3 /* Preview Content */,
 			);
 			path = Enduro;
@@ -110,6 +105,8 @@
 			children = (
 				B700DC142B0EFBD50094DDF3 /* UserPreference.swift */,
 				B700DC162B0EFC0F0094DDF3 /* UserDefaults.swift */,
+				B7DFA8612B1E1BE0008D9150 /* RunLog.swift */,
+				B7DFA8652B1E6BEB008D9150 /* RunData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,7 +116,6 @@
 			children = (
 				B700DC2D2B122A260094DDF3 /* MainFlow */,
 				B700DC2C2B1229EC0094DDF3 /* WelcomeFlow */,
-				B700DC2E2B122A5A0094DDF3 /* SharedComponents */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -128,7 +124,11 @@
 			isa = PBXGroup;
 			children = (
 				B700DC032B0D67F80094DDF3 /* WelcomeView.swift */,
+				B700DC1E2B0F1DED0094DDF3 /* GoalOptionButton.swift */,
 				B700DC202B0F1ED20094DDF3 /* GoalSettingView.swift */,
+				B700DC242B10F5690094DDF3 /* DistanceSlider.swift */,
+				B700DC222B10F4A90094DDF3 /* DurationPicker.swift */,
+				B788424A2B1B766A006895EA /* PickerContent.swift */,
 			);
 			path = WelcomeFlow;
 			sourceTree = "<group>";
@@ -138,31 +138,10 @@
 			children = (
 				B700DC182B0EFCA70094DDF3 /* HomeView.swift */,
 				B78347FD2B1249F0006ACFE5 /* Logs */,
-				B700DC262B11BE750094DDF3 /* TrendsView.swift */,
-				B700DC282B11BE850094DDF3 /* RunView.swift */,
+				B7DFA8672B1E6C58008D9150 /* Trends */,
+				B7DFA8682B1E6C6D008D9150 /* Run */,
 			);
 			path = MainFlow;
-			sourceTree = "<group>";
-		};
-		B700DC2E2B122A5A0094DDF3 /* SharedComponents */ = {
-			isa = PBXGroup;
-			children = (
-				B700DC1E2B0F1DED0094DDF3 /* GoalOptionButton.swift */,
-				B700DC222B10F4A90094DDF3 /* DurationPicker.swift */,
-				B700DC242B10F5690094DDF3 /* DistanceSlider.swift */,
-				B78347FE2B127F81006ACFE5 /* MockRunLogViewModel.swift */,
-				B788424A2B1B766A006895EA /* PickerContent.swift */,
-			);
-			path = SharedComponents;
-			sourceTree = "<group>";
-		};
-		B700DC2F2B122AC10094DDF3 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				B700DC302B122B610094DDF3 /* RunLogViewModel.swift */,
-				B788424C2B1D6CB0006895EA /* RunDataViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		B78347FD2B1249F0006ACFE5 /* Logs */ = {
@@ -170,8 +149,26 @@
 			children = (
 				B700DC2A2B11BE990094DDF3 /* LogView.swift */,
 				B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */,
+				B7DFA8632B1E6877008D9150 /* AddDurationPicker.swift */,
 			);
 			path = Logs;
+			sourceTree = "<group>";
+		};
+		B7DFA8672B1E6C58008D9150 /* Trends */ = {
+			isa = PBXGroup;
+			children = (
+				B700DC262B11BE750094DDF3 /* TrendsView.swift */,
+				B7DFA8692B1E6E1C008D9150 /* TimeRangeSelectorView.swift */,
+			);
+			path = Trends;
+			sourceTree = "<group>";
+		};
+		B7DFA8682B1E6C6D008D9150 /* Run */ = {
+			isa = PBXGroup;
+			children = (
+				B700DC282B11BE850094DDF3 /* RunView.swift */,
+			);
+			path = Run;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,25 +241,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B700DC0E2B0D67F90094DDF3 /* Enduro.xcdatamodeld in Sources */,
 				B700DC212B0F1ED20094DDF3 /* GoalSettingView.swift in Sources */,
 				B788424B2B1B766A006895EA /* PickerContent.swift in Sources */,
 				B700DC1F2B0F1DED0094DDF3 /* GoalOptionButton.swift in Sources */,
-				B788424D2B1D6CB0006895EA /* RunDataViewModel.swift in Sources */,
-				B700DC312B122B610094DDF3 /* RunLogViewModel.swift in Sources */,
 				B700DC292B11BE850094DDF3 /* RunView.swift in Sources */,
 				B700DC192B0EFCA70094DDF3 /* HomeView.swift in Sources */,
-				B700DC0B2B0D67F90094DDF3 /* Persistence.swift in Sources */,
 				B700DC172B0EFC0F0094DDF3 /* UserDefaults.swift in Sources */,
 				B700DC042B0D67F80094DDF3 /* WelcomeView.swift in Sources */,
 				B700DC332B1236210094DDF3 /* AddEditRunLogView.swift in Sources */,
 				B700DC232B10F4A90094DDF3 /* DurationPicker.swift in Sources */,
 				B700DC272B11BE750094DDF3 /* TrendsView.swift in Sources */,
+				B7DFA8622B1E1BE0008D9150 /* RunLog.swift in Sources */,
 				B700DC252B10F5690094DDF3 /* DistanceSlider.swift in Sources */,
 				B700DC152B0EFBD50094DDF3 /* UserPreference.swift in Sources */,
+				B7DFA8662B1E6BEB008D9150 /* RunData.swift in Sources */,
+				B7DFA86A2B1E6E1C008D9150 /* TimeRangeSelectorView.swift in Sources */,
 				B700DC022B0D67F80094DDF3 /* EnduroApp.swift in Sources */,
 				B700DC2B2B11BE990094DDF3 /* LogView.swift in Sources */,
-				B78347FF2B127F81006ACFE5 /* MockRunLogViewModel.swift in Sources */,
+				B7DFA8642B1E6877008D9150 /* AddDurationPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,19 +461,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B700DC0C2B0D67F90094DDF3 /* Enduro.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B700DC0D2B0D67F90094DDF3 /* Enduro.xcdatamodel */,
-			);
-			currentVersion = B700DC0D2B0D67F90094DDF3 /* Enduro.xcdatamodel */;
-			path = Enduro.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B700DBF62B0D67F80094DDF3 /* Project object */;
 }

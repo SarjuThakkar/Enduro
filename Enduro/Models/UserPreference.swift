@@ -15,6 +15,6 @@ enum GoalType: String, Codable, Hashable {
 struct UserPreferences: Codable {
     var goalType: GoalType
     var goalDistance: Double?
-    var goalDuration: TimeInterval? // Duration in seconds
+    var goalDuration: Int32? // Duration in seconds
 }
 
