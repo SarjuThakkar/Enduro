@@ -26,6 +26,10 @@
 		B7DFA8622B1E1BE0008D9150 /* RunLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8612B1E1BE0008D9150 /* RunLog.swift */; };
 		B7DFA8642B1E6877008D9150 /* AddDurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8632B1E6877008D9150 /* AddDurationPicker.swift */; };
 		B7DFA8662B1E6BEB008D9150 /* RunData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8652B1E6BEB008D9150 /* RunData.swift */; };
+		B7DFA86C2B1E74BF008D9150 /* TimeRangeSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA86B2B1E74BF008D9150 /* TimeRangeSelectorView.swift */; };
+		B7DFA86E2B1E78EF008D9150 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA86D2B1E78EF008D9150 /* StatsView.swift */; };
+		B7DFA8702B1E7B80008D9150 /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA86F2B1E7B80008D9150 /* StatView.swift */; };
+		B7DFA8722B1E7DD0008D9150 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8712B1E7DD0008D9150 /* ChartsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		B7DFA8612B1E1BE0008D9150 /* RunLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLog.swift; sourceTree = "<group>"; };
 		B7DFA8632B1E6877008D9150 /* AddDurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDurationPicker.swift; sourceTree = "<group>"; };
 		B7DFA8652B1E6BEB008D9150 /* RunData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunData.swift; sourceTree = "<group>"; };
+		B7DFA86B2B1E74BF008D9150 /* TimeRangeSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeRangeSelectorView.swift; sourceTree = "<group>"; };
+		B7DFA86D2B1E78EF008D9150 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		B7DFA86F2B1E7B80008D9150 /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
+		B7DFA8712B1E7DD0008D9150 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +164,10 @@
 			isa = PBXGroup;
 			children = (
 				B700DC262B11BE750094DDF3 /* TrendsView.swift */,
+				B7DFA86B2B1E74BF008D9150 /* TimeRangeSelectorView.swift */,
+				B7DFA86D2B1E78EF008D9150 /* StatsView.swift */,
+				B7DFA86F2B1E7B80008D9150 /* StatView.swift */,
+				B7DFA8712B1E7DD0008D9150 /* ChartsView.swift */,
 			);
 			path = Trends;
 			sourceTree = "<group>";
@@ -250,8 +262,12 @@
 				B700DC272B11BE750094DDF3 /* TrendsView.swift in Sources */,
 				B7DFA8622B1E1BE0008D9150 /* RunLog.swift in Sources */,
 				B700DC252B10F5690094DDF3 /* DistanceSlider.swift in Sources */,
+				B7DFA8702B1E7B80008D9150 /* StatView.swift in Sources */,
 				B700DC152B0EFBD50094DDF3 /* UserPreference.swift in Sources */,
+				B7DFA8722B1E7DD0008D9150 /* ChartsView.swift in Sources */,
 				B7DFA8662B1E6BEB008D9150 /* RunData.swift in Sources */,
+				B7DFA86E2B1E78EF008D9150 /* StatsView.swift in Sources */,
+				B7DFA86C2B1E74BF008D9150 /* TimeRangeSelectorView.swift in Sources */,
 				B700DC022B0D67F80094DDF3 /* EnduroApp.swift in Sources */,
 				B700DC2B2B11BE990094DDF3 /* LogView.swift in Sources */,
 				B7DFA8642B1E6877008D9150 /* AddDurationPicker.swift in Sources */,

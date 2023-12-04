@@ -18,113 +18,24 @@ struct TrendsView: View {
         let filteredRunData = groupRunsByDay(runs: runLogs.filter { runLog in
             isDate(runLog.timestamp, inTimeRange: selectedTimeRange, relativeTo: referenceDate)
         })
-        let totalStats = calculateTotalStats(from: filteredRunData)
         NavigationView {
             ScrollView {
-                Picker("Time Range", selection: $selectedTimeRange) {
-                    Text("Week").tag(TimeRange.week)
-                    Text("Month").tag(TimeRange.month)
-                    Text("Year").tag(TimeRange.year)
-                    Text("All").tag(TimeRange.all)
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                
-                if (selectedTimeRange != .all) {
-                    HStack {
-                        Button(action: { adjustReferenceDate(backward: true) }) {
-                            Image(systemName: "arrow.left")
-                        }
-                        Spacer()
-                        Text(dateRangeText())
-                        Spacer()
-                        Button(action: { adjustReferenceDate(backward: false) }) {
-                            Image(systemName: "arrow.right")
-                        }
-                    }
-                    .padding()
-                }
+                TimeRangeSelectorView(
+                   selectedTimeRange: $selectedTimeRange,
+                   referenceDate: $referenceDate
+               )
                 if filteredRunData.isEmpty {
                     Text("No data in the selected range")
                         .padding()
                         .font(.headline)
                 } else {
-                    statsSection(totalStats)
-                    VStack {
-                        VStack {
-                            Text("Distance").font(.headline)
-                            Chart {
-                                ForEach(filteredRunData, id: \.date) { runData in
-                                    LineMark(
-                                        x: .value("Date", runData.date, unit: .day),
-                                        y: .value("Miles", runData.totalMiles)
-                                    )
-                                }
-                            }
-                            .chartYAxisLabel("miles")
-                        }
-                        .padding()
-                        
-                        VStack {
-                            Text("Duration").font(.headline)
-                            Chart {
-                                ForEach(filteredRunData, id: \.date) { runData in
-                                    LineMark(
-                                        x: .value("Date", runData.date, unit: .day),
-                                        y: .value("Duration", runData.totalDuration)
-                                    )
-                                }
-                            }
-                            .chartYAxisLabel("minutes")
-                        }
-                        .padding()
-                        
-                        VStack {
-                            Text("Pace").font(.headline)
-                            Chart {
-                                ForEach(filteredRunData, id: \.date) { runData in
-                                    LineMark(
-                                        x: .value("Date", runData.date, unit: .day),
-                                        y: .value("Pace", runData.averagePace)
-                                    )
-                                }
-                            }
-                            .chartYAxisLabel("mins/mile")
-                        }
-                        .padding()
-                        
-                        VStack {
-                            Text("Run Count").font(.headline)
-                            Chart {
-                                ForEach(filteredRunData, id: \.date) { runData in
-                                    LineMark(
-                                        x: .value("Date", runData.date, unit: .day),
-                                        y: .value("Runs", runData.runCount)
-                                    )
-                                }
-                            }
-                        }
-                        .padding()
-                    }
+                    StatsView(runData: filteredRunData)
+                    ChartsView(runData: filteredRunData)
                 }
             }
             .navigationTitle("Trends")
         }
     }
-    private func adjustReferenceDate(backward: Bool) {
-        switch selectedTimeRange {
-        case .week:
-            referenceDate = Calendar.current.date(byAdding: .weekOfYear, value: backward ? -1 : 1, to: referenceDate) ?? referenceDate
-        case .month:
-            referenceDate = Calendar.current.date(byAdding: .month, value: backward ? -1 : 1, to: referenceDate) ?? referenceDate
-        case .year:
-            referenceDate = Calendar.current.date(byAdding: .year, value: backward ? -1 : 1, to: referenceDate) ?? referenceDate
-        case .all:
-            // No adjustment needed for 'All' range
-            break
-        }
-    }
-    
     private func isDate(_ date: Date, inTimeRange timeRange: TimeRange, relativeTo referenceDate: Date) -> Bool {
         switch timeRange {
         case .week:
@@ -137,67 +48,6 @@ struct TrendsView: View {
             return true
         }
     }
-    
-    private func dateRangeText() -> String {
-        let formatter = DateFormatter()
-        switch selectedTimeRange {
-        case .week:
-            formatter.dateFormat = "MMM d"
-            let (startOfWeek, endOfWeek) = weekRange(for: referenceDate)
-            return "\(formatter.string(from: startOfWeek)) - \(formatter.string(from: endOfWeek))"
-        case .month:
-            formatter.dateFormat = "MMMM yyyy"
-            return formatter.string(from: referenceDate)
-        case .year:
-            formatter.dateFormat = "yyyy"
-            return formatter.string(from: referenceDate)
-        default:
-            return ""
-        }
-    }
-}
-
-private func statsSection(_ totalStats: (miles: Double, minutes: Int, runs: Int)) -> some View {
-    let statWidth: CGFloat = 100 // Adjust this value as needed
-
-    return VStack {
-        Text("Stats").font(.headline)
-        HStack {
-            VStack {
-                Text("\(totalStats.miles, specifier: "%.2f")")
-                    .font(.title)
-                Text("Miles")
-            }
-            .frame(width: statWidth)
-
-            VStack {
-                Text("\(totalStats.minutes)")
-                    .font(.title)
-                Text("Minutes")
-            }
-            .frame(width: statWidth)
-
-            VStack {
-                Text("\(totalStats.runs)")
-                    .font(.title)
-                Text("Runs")
-            }
-            .frame(width: statWidth)
-        }
-    }
-    .padding()
-}
-
-
-private func calculateTotalStats(from runData: [RunData]) -> (miles: Double, minutes: Int, runs: Int) {
-    let totalMiles = runData.reduce(0) { $0 + $1.totalMiles }
-    let totalMinutes = runData.reduce(0) { $0 + $1.totalDuration }
-    let totalRuns = runData.reduce(0) { $0 + $1.runCount }
-    return (totalMiles, totalMinutes, totalRuns)
-}
-
-enum TimeRange {
-    case week, month, year, all
 }
 
 extension Calendar {
@@ -212,12 +62,6 @@ extension Calendar {
     func isDateInThisYear(_ date: Date) -> Bool {
         return isDate(date, equalTo: Date(), toGranularity: .year)
     }
-}
-
-private func weekRange(for date: Date) -> (start: Date, end: Date) {
-    let startOfWeek = Calendar.current.date(from: Calendar.current.dateComponents([.yearForWeekOfYear, .weekOfYear], from: date))!
-    let endOfWeek = Calendar.current.date(byAdding: .day, value: 6, to: startOfWeek)!
-    return (startOfWeek, endOfWeek)
 }
 
 private func groupRunsByDay(runs: [RunLog]) -> [RunData] {
