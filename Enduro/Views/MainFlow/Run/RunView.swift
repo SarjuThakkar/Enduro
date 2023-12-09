@@ -20,6 +20,10 @@ struct RunView: View {
         
         NavigationView {
             VStack {
+                ActivityRingView(workoutActive: $workoutActive, progressResult: goalData)
+                
+                Spacer()
+                
                 VStack {
                     GoalProgressBar(progressResult: goalData)
                     HStack {
@@ -36,9 +40,6 @@ struct RunView: View {
                 
                 Spacer()
                 
-                ActivityRingView(workoutActive: $workoutActive, progressResult: goalData)
-                
-                Spacer()
             }
             .navigationTitle("Run")
         }

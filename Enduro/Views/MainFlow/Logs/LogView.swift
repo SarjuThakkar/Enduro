@@ -26,6 +26,7 @@ struct LogView: View {
                 }
                 .onDelete(perform: deleteRunLog)
             }
+            .padding(.top)
             .navigationTitle("Logs")
             .navigationBarItems(trailing: Button(action: {
                 showingAddRunLog = true

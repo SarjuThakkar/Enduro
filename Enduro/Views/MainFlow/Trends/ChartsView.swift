@@ -59,7 +59,7 @@ struct ChartsView: View {
                 Text("Run Count").font(.headline)
                 Chart {
                     ForEach(runData, id: \.date) { runData in
-                        LineMark(
+                        BarMark(
                             x: .value("Date", runData.date, unit: .day),
                             y: .value("Runs", runData.runCount)
                         )

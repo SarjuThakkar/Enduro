@@ -24,11 +24,10 @@
 		B700DC332B1236210094DDF3 /* AddEditRunLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */; };
 		B788424B2B1B766A006895EA /* PickerContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B788424A2B1B766A006895EA /* PickerContent.swift */; };
 		B7DD87062B1FD4ED0035FEC5 /* ActivityRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD87052B1FD4ED0035FEC5 /* ActivityRingView.swift */; };
-		B7DD870E2B1FD99D0035FEC5 /* EnduroCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD870D2B1FD99D0035FEC5 /* EnduroCompanionApp.swift */; };
-		B7DD87102B1FD99D0035FEC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD870F2B1FD99D0035FEC5 /* ContentView.swift */; };
-		B7DD87122B1FD99F0035FEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DD87112B1FD99F0035FEC5 /* Assets.xcassets */; };
-		B7DD87152B1FD99F0035FEC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DD87142B1FD99F0035FEC5 /* Preview Assets.xcassets */; };
-		B7DD87182B1FD99F0035FEC5 /* EnduroCompanion Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B7DD870B2B1FD99D0035FEC5 /* EnduroCompanion Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B7DD87242B229A080035FEC5 /* EnduroCompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DD87232B229A080035FEC5 /* EnduroCompanionApp.swift */; };
+		B7DD87282B229A080035FEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DD87272B229A080035FEC5 /* Assets.xcassets */; };
+		B7DD872B2B229A080035FEC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DD872A2B229A080035FEC5 /* Preview Assets.xcassets */; };
+		B7DD872E2B229A080035FEC5 /* EnduroCompanion Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B7DD87212B229A070035FEC5 /* EnduroCompanion Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B7DFA8622B1E1BE0008D9150 /* RunLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8612B1E1BE0008D9150 /* RunLog.swift */; };
 		B7DFA8642B1E6877008D9150 /* AddDurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8632B1E6877008D9150 /* AddDurationPicker.swift */; };
 		B7DFA8662B1E6BEB008D9150 /* RunData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8652B1E6BEB008D9150 /* RunData.swift */; };
@@ -37,14 +36,22 @@
 		B7DFA8702B1E7B80008D9150 /* StatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA86F2B1E7B80008D9150 /* StatView.swift */; };
 		B7DFA8722B1E7DD0008D9150 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8712B1E7DD0008D9150 /* ChartsView.swift */; };
 		B7DFA8742B1ED9D2008D9150 /* GoalProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DFA8732B1ED9D2008D9150 /* GoalProgressBar.swift */; };
+		B7F5FE602B24C1C70044D262 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5FE5B2B24C1C70044D262 /* ControlsView.swift */; };
+		B7F5FE612B24C1C70044D262 /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5FE5D2B24C1C70044D262 /* ElapsedTimeView.swift */; };
+		B7F5FE622B24C1C70044D262 /* ActivityRingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5FE5C2B24C1C70044D262 /* ActivityRingsView.swift */; };
+		B7F5FE632B24C1C70044D262 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5FE582B24C1C60044D262 /* StartView.swift */; };
+		B7F5FE642B24C1C70044D262 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5FE592B24C1C60044D262 /* SummaryView.swift */; };
+		B7F5FE652B24C1C70044D262 /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5FE5A2B24C1C70044D262 /* MetricsView.swift */; };
+		B7F5FE692B24C1CE0044D262 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5FE682B24C1CE0044D262 /* WorkoutManager.swift */; };
+		B7F5FE6B2B24C2340044D262 /* SessionPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F5FE6A2B24C2340044D262 /* SessionPagingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B7DD87162B1FD99F0035FEC5 /* PBXContainerItemProxy */ = {
+		B7DD872C2B229A080035FEC5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B700DBF62B0D67F80094DDF3 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B7DD870A2B1FD99D0035FEC5;
+			remoteGlobalIDString = B7DD87202B229A070035FEC5;
 			remoteInfo = "EnduroCompanion Watch App";
 		};
 /* End PBXContainerItemProxy section */
@@ -56,7 +63,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				B7DD87182B1FD99F0035FEC5 /* EnduroCompanion Watch App.app in Embed Watch Content */,
+				B7DD872E2B229A080035FEC5 /* EnduroCompanion Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,11 +89,10 @@
 		B700DC322B1236210094DDF3 /* AddEditRunLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditRunLogView.swift; sourceTree = "<group>"; };
 		B788424A2B1B766A006895EA /* PickerContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerContent.swift; sourceTree = "<group>"; };
 		B7DD87052B1FD4ED0035FEC5 /* ActivityRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingView.swift; sourceTree = "<group>"; };
-		B7DD870B2B1FD99D0035FEC5 /* EnduroCompanion Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EnduroCompanion Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7DD870D2B1FD99D0035FEC5 /* EnduroCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduroCompanionApp.swift; sourceTree = "<group>"; };
-		B7DD870F2B1FD99D0035FEC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B7DD87112B1FD99F0035FEC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B7DD87142B1FD99F0035FEC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B7DD87212B229A070035FEC5 /* EnduroCompanion Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EnduroCompanion Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DD87232B229A080035FEC5 /* EnduroCompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnduroCompanionApp.swift; sourceTree = "<group>"; };
+		B7DD87272B229A080035FEC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7DD872A2B229A080035FEC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B7DFA8612B1E1BE0008D9150 /* RunLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunLog.swift; sourceTree = "<group>"; };
 		B7DFA8632B1E6877008D9150 /* AddDurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDurationPicker.swift; sourceTree = "<group>"; };
 		B7DFA8652B1E6BEB008D9150 /* RunData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunData.swift; sourceTree = "<group>"; };
@@ -95,6 +101,14 @@
 		B7DFA86F2B1E7B80008D9150 /* StatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatView.swift; sourceTree = "<group>"; };
 		B7DFA8712B1E7DD0008D9150 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		B7DFA8732B1ED9D2008D9150 /* GoalProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalProgressBar.swift; sourceTree = "<group>"; };
+		B7F5FE582B24C1C60044D262 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		B7F5FE592B24C1C60044D262 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
+		B7F5FE5A2B24C1C70044D262 /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		B7F5FE5B2B24C1C70044D262 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		B7F5FE5C2B24C1C70044D262 /* ActivityRingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityRingsView.swift; sourceTree = "<group>"; };
+		B7F5FE5D2B24C1C70044D262 /* ElapsedTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
+		B7F5FE682B24C1CE0044D262 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		B7F5FE6A2B24C2340044D262 /* SessionPagingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SessionPagingView.swift; path = "../../../../Downloads/BuildAWorkoutAppForAppleWatch/MyWorkouts WatchKit Extension/Views/SessionPagingView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +119,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7DD87082B1FD99D0035FEC5 /* Frameworks */ = {
+		B7DD871E2B229A070035FEC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,7 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B700DC002B0D67F80094DDF3 /* Enduro */,
-				B7DD870C2B1FD99D0035FEC5 /* EnduroCompanion Watch App */,
+				B7DD87222B229A080035FEC5 /* EnduroCompanion Watch App */,
 				B700DBFF2B0D67F80094DDF3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B700DBFE2B0D67F80094DDF3 /* Enduro.app */,
-				B7DD870B2B1FD99D0035FEC5 /* EnduroCompanion Watch App.app */,
+				B7DD87212B229A070035FEC5 /* EnduroCompanion Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -207,21 +221,28 @@
 			path = Logs;
 			sourceTree = "<group>";
 		};
-		B7DD870C2B1FD99D0035FEC5 /* EnduroCompanion Watch App */ = {
+		B7DD87222B229A080035FEC5 /* EnduroCompanion Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				B7DD870D2B1FD99D0035FEC5 /* EnduroCompanionApp.swift */,
-				B7DD870F2B1FD99D0035FEC5 /* ContentView.swift */,
-				B7DD87112B1FD99F0035FEC5 /* Assets.xcassets */,
-				B7DD87132B1FD99F0035FEC5 /* Preview Content */,
+				B7F5FE682B24C1CE0044D262 /* WorkoutManager.swift */,
+				B7F5FE5C2B24C1C70044D262 /* ActivityRingsView.swift */,
+				B7F5FE5B2B24C1C70044D262 /* ControlsView.swift */,
+				B7F5FE5D2B24C1C70044D262 /* ElapsedTimeView.swift */,
+				B7F5FE5A2B24C1C70044D262 /* MetricsView.swift */,
+				B7F5FE6A2B24C2340044D262 /* SessionPagingView.swift */,
+				B7F5FE582B24C1C60044D262 /* StartView.swift */,
+				B7F5FE592B24C1C60044D262 /* SummaryView.swift */,
+				B7DD87232B229A080035FEC5 /* EnduroCompanionApp.swift */,
+				B7DD87272B229A080035FEC5 /* Assets.xcassets */,
+				B7DD87292B229A080035FEC5 /* Preview Content */,
 			);
 			path = "EnduroCompanion Watch App";
 			sourceTree = "<group>";
 		};
-		B7DD87132B1FD99F0035FEC5 /* Preview Content */ = {
+		B7DD87292B229A080035FEC5 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				B7DD87142B1FD99F0035FEC5 /* Preview Assets.xcassets */,
+				B7DD872A2B229A080035FEC5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -263,20 +284,20 @@
 			buildRules = (
 			);
 			dependencies = (
-				B7DD87172B1FD99F0035FEC5 /* PBXTargetDependency */,
+				B7DD872D2B229A080035FEC5 /* PBXTargetDependency */,
 			);
 			name = Enduro;
 			productName = Enduro;
 			productReference = B700DBFE2B0D67F80094DDF3 /* Enduro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B7DD870A2B1FD99D0035FEC5 /* EnduroCompanion Watch App */ = {
+		B7DD87202B229A070035FEC5 /* EnduroCompanion Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7DD87192B1FD99F0035FEC5 /* Build configuration list for PBXNativeTarget "EnduroCompanion Watch App" */;
+			buildConfigurationList = B7DD872F2B229A090035FEC5 /* Build configuration list for PBXNativeTarget "EnduroCompanion Watch App" */;
 			buildPhases = (
-				B7DD87072B1FD99D0035FEC5 /* Sources */,
-				B7DD87082B1FD99D0035FEC5 /* Frameworks */,
-				B7DD87092B1FD99D0035FEC5 /* Resources */,
+				B7DD871D2B229A070035FEC5 /* Sources */,
+				B7DD871E2B229A070035FEC5 /* Frameworks */,
+				B7DD871F2B229A070035FEC5 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -284,7 +305,7 @@
 			);
 			name = "EnduroCompanion Watch App";
 			productName = "EnduroCompanion Watch App";
-			productReference = B7DD870B2B1FD99D0035FEC5 /* EnduroCompanion Watch App.app */;
+			productReference = B7DD87212B229A070035FEC5 /* EnduroCompanion Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -300,7 +321,7 @@
 					B700DBFD2B0D67F80094DDF3 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
-					B7DD870A2B1FD99D0035FEC5 = {
+					B7DD87202B229A070035FEC5 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
@@ -319,7 +340,7 @@
 			projectRoot = "";
 			targets = (
 				B700DBFD2B0D67F80094DDF3 /* Enduro */,
-				B7DD870A2B1FD99D0035FEC5 /* EnduroCompanion Watch App */,
+				B7DD87202B229A070035FEC5 /* EnduroCompanion Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -334,12 +355,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7DD87092B1FD99D0035FEC5 /* Resources */ = {
+		B7DD871F2B229A070035FEC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7DD87152B1FD99F0035FEC5 /* Preview Assets.xcassets in Resources */,
-				B7DD87122B1FD99F0035FEC5 /* Assets.xcassets in Resources */,
+				B7DD872B2B229A080035FEC5 /* Preview Assets.xcassets in Resources */,
+				B7DD87282B229A080035FEC5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,22 +397,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B7DD87072B1FD99D0035FEC5 /* Sources */ = {
+		B7DD871D2B229A070035FEC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7DD87102B1FD99D0035FEC5 /* ContentView.swift in Sources */,
-				B7DD870E2B1FD99D0035FEC5 /* EnduroCompanionApp.swift in Sources */,
+				B7F5FE612B24C1C70044D262 /* ElapsedTimeView.swift in Sources */,
+				B7F5FE642B24C1C70044D262 /* SummaryView.swift in Sources */,
+				B7DD87242B229A080035FEC5 /* EnduroCompanionApp.swift in Sources */,
+				B7F5FE602B24C1C70044D262 /* ControlsView.swift in Sources */,
+				B7F5FE632B24C1C70044D262 /* StartView.swift in Sources */,
+				B7F5FE622B24C1C70044D262 /* ActivityRingsView.swift in Sources */,
+				B7F5FE652B24C1C70044D262 /* MetricsView.swift in Sources */,
+				B7F5FE692B24C1CE0044D262 /* WorkoutManager.swift in Sources */,
+				B7F5FE6B2B24C2340044D262 /* SessionPagingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B7DD87172B1FD99F0035FEC5 /* PBXTargetDependency */ = {
+		B7DD872D2B229A080035FEC5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B7DD870A2B1FD99D0035FEC5 /* EnduroCompanion Watch App */;
-			targetProxy = B7DD87162B1FD99F0035FEC5 /* PBXContainerItemProxy */;
+			target = B7DD87202B229A070035FEC5 /* EnduroCompanion Watch App */;
+			targetProxy = B7DD872C2B229A080035FEC5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -572,7 +600,7 @@
 			};
 			name = Release;
 		};
-		B7DD871A2B1FD99F0035FEC5 /* Debug */ = {
+		B7DD87302B229A090035FEC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -606,7 +634,7 @@
 			};
 			name = Debug;
 		};
-		B7DD871B2B1FD99F0035FEC5 /* Release */ = {
+		B7DD87312B229A090035FEC5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -660,11 +688,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7DD87192B1FD99F0035FEC5 /* Build configuration list for PBXNativeTarget "EnduroCompanion Watch App" */ = {
+		B7DD872F2B229A090035FEC5 /* Build configuration list for PBXNativeTarget "EnduroCompanion Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B7DD871A2B1FD99F0035FEC5 /* Debug */,
-				B7DD871B2B1FD99F0035FEC5 /* Release */,
+				B7DD87302B229A090035FEC5 /* Debug */,
+				B7DD87312B229A090035FEC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
